@@ -1,0 +1,4 @@
+name: BungeeStaffChat
+main: com.inkzzz.bungee.staffchat.StaffChatPlugin
+version: 1.0
+author: [Inkzzz]

@@ -121,7 +121,7 @@ public final class StaffChatPlugin extends Plugin
         public final void onEvent(final ChatEvent event)
         {
             final ProxiedPlayer player = (ProxiedPlayer) event.getSender();
-            if(getToggled().contains(player.getUniqueId()))
+            if(!event.getMessage().startsWith("/") && getToggled().contains(player.getUniqueId()))
             {
                 event.setCancelled(true);
 
